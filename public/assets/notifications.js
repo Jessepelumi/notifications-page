@@ -4,48 +4,48 @@ const notificationsDb = [
         "message": "reacted to your recent post",
         "post": "My first tournament today!",
         "time": "1m ago",
-        "content": "lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum d. Lorem ipsum d. Lorem ipsum d. Lorem"
+        "content": " "
     },
     {
-        "name": "Mark Webber",
-        "message": "reacted to your recent post",
-        "post": "My first tournament today!",
-        "time": "1m ago",
-        "content": "lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum d. Lorem ipsum d. Lorem ipsum d. Lorem"
+        "name": "Angela Gray",
+        "message": "followed you",
+        "post": " ",
+        "time": "5m ago",
+        "content": " "
     },
     {
-        "name": "Mark Webber",
-        "message": "reacted to your recent post",
-        "post": "My first tournament today!",
-        "time": "1m ago",
-        "content": "lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum d. Lorem ipsum d. Lorem ipsum d. Lorem"
+        "name": "Jacob Thompson",
+        "message": "has joined your group",
+        "post": "Chess Club",
+        "time": "1 day ago",
+        "content": " "
     },
     {
-        "name": "Mark Webber",
-        "message": "reacted to your recent post",
+        "name": "Rizky Hasanuddin",
+        "message": "sent you a private message",
         "post": "My first tournament today!",
-        "time": "1m ago",
+        "time": "5 days ago",
         "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
     },
     {
-        "name": "Mark Webber",
-        "message": "reacted to your recent post",
+        "name": "Kimberly Smith",
+        "message": "commented on your picture",
         "post": "My first tournament today!",
-        "time": "1m ago",
-        "content": "lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum d. Lorem ipsum d. Lorem ipsum d. Lorem"
+        "time": "1 week ago",
+        "content": " "
     },
     {
-        "name": "Mark Webber",
+        "name": "Nathan Peterson",
         "message": "reacted to your recent post",
-        "post": "My first tournament today!",
-        "time": "1m ago",
-        "content": "lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum d. Lorem ipsum d. Lorem ipsum d. Lorem"
+        "post": "5 end-game strategies to increase your win rate",
+        "time": "2 weeks ago",
+        "content": " "
     },
     {
-        "name": "Mark Webber",
-        "message": "reacted to your recent post",
-        "post": "My first tournament today!",
-        "time": "1m ago",
-        "content": "lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum d. Lorem ipsum d. Lorem ipsum d. Lorem"
+        "name": "Anna Kim",
+        "message": "left the group",
+        "post": "Chess Club",
+        "time": "2 weeks ago",
+        "content": " "
     }
 ];
