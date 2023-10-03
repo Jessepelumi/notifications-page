@@ -17,6 +17,9 @@ module.exports = {
           "d-grayish-blue": "hsl(219, 12%, 42%)",
           "v-dark-blue": "hsl(224, 21%, 14%)"
         }
+      },
+      fontSize: {
+        "custom": "16px"
       }
     },
   },

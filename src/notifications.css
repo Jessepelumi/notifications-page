@@ -14,7 +14,7 @@
     @apply font-bold text-neutral-v-dark-blue
 }
 
-.message {
+.message, .time {
     @apply text-neutral-d-grayish-blue
 }
 
@@ -24,6 +24,10 @@
 
 .group {
     @apply text-primary-blue font-semibold
+}
+
+.content {
+    @apply text-neutral-d-grayish-blue rounded-md border mt-1 p-3
 }
 
 .picture-element {

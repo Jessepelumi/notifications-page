@@ -27,6 +27,7 @@ fetch("assets/notifications.json")
             const message = document.createElement("span");
             const post = document.createElement("span");
             const group = document.createElement("span");
+            const content = document.createElement("div");
             name.innerText = notification.name;
             name.classList.add("name");
             message.innerText = notification.message;
@@ -36,13 +37,20 @@ fetch("assets/notifications.json")
             group.innerText = notification.group;
             group.classList.add("group");
             time.innerText = notification.time;
+            time.classList.add("time");
+            content.innerText = notification.content;
+            content.classList.add("content");
             notifyEl.classList.add("notify-element");
             notify.append(name, message, post, group);
-            notifyEl.append(notify, time);
+            notifyEl.append(notify, time, content);
 
             notificationBox.append(pictureEl, notifyEl);
 
             container.append(notificationBox);
+
+            if(content.innerText === "") {
+                content.classList.remove("content");
+            };
         })
 
     })

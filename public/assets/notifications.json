@@ -6,7 +6,7 @@
         "post": "My first tournament today! ",
         "group": " ",
         "time": "1m ago",
-        "content": " "
+        "content": ""
     },
     {
         "picture": "assets/images/avatar-angela-gray.webp",
@@ -15,7 +15,7 @@
         "post": " ",
         "group": " ",
         "time": "5m ago",
-        "content": " "
+        "content": ""
     },
     {
         "picture": "assets/images/avatar-jacob-thompson.webp",
@@ -24,7 +24,7 @@
         "post": " ",
         "group": "Chess Club ",
         "time": "1 day ago",
-        "content": " "
+        "content": ""
     },
     {
         "picture": "assets/images/avatar-rizky-hasanuddin.webp",
@@ -39,10 +39,10 @@
         "picture": "assets/images/avatar-kimberly-smith.webp",
         "name": "Kimberly Smith ",
         "message": "commented on your picture ",
-        "post": " ",
+        "post": "",
         "group": " ",
         "time": "1 week ago",
-        "content": " "
+        "content": ""
     },
     {
         "picture": "assets/images/avatar-nathan-peterson.webp",
@@ -51,7 +51,7 @@
         "post": "5 end-game strategies to increase your win rate ",
         "group": " ",
         "time": "2 weeks ago",
-        "content": " "
+        "content": ""
     },
     {
         "picture": "assets/images/avatar-anna-kim.webp",
@@ -60,6 +60,6 @@
         "post": " ",
         "group": "Chess Club ",
         "time": "2 weeks ago",
-        "content": " "
+        "content": ""
     }
 ]
