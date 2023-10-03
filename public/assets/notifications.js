@@ -26,12 +26,18 @@ fetch("assets/notifications.json")
             const name = document.createElement("span");
             const message = document.createElement("span");
             const post = document.createElement("span");
+            const group = document.createElement("span");
             name.innerText = notification.name;
+            name.classList.add("name");
             message.innerText = notification.message;
+            message.classList.add("message");
             post.innerText = notification.post;
+            post.classList.add("post");
+            group.innerText = notification.group;
+            group.classList.add("group");
             time.innerText = notification.time;
             notifyEl.classList.add("notify-element");
-            notify.append(name, message, post);
+            notify.append(name, message, post, group);
             notifyEl.append(notify, time);
 
             notificationBox.append(pictureEl, notifyEl);

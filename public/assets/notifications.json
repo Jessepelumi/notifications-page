@@ -1,57 +1,64 @@
 [
     {
         "picture": "assets/images/avatar-mark-webber.webp",
-        "name": "Mark Webber",
-        "message": "reacted to your recent post",
-        "post": "My first tournament today!",
+        "name": "Mark Webber ",
+        "message": "reacted to your recent post ",
+        "post": "My first tournament today! ",
+        "group": " ",
         "time": "1m ago",
         "content": " "
     },
     {
         "picture": "assets/images/avatar-angela-gray.webp",
-        "name": "Angela Gray",
-        "message": "followed you",
+        "name": "Angela Gray ",
+        "message": "followed you ",
         "post": " ",
+        "group": " ",
         "time": "5m ago",
         "content": " "
     },
     {
         "picture": "assets/images/avatar-jacob-thompson.webp",
-        "name": "Jacob Thompson",
-        "message": "has joined your group",
-        "post": "Chess Club",
+        "name": "Jacob Thompson ",
+        "message": "has joined your group ",
+        "post": " ",
+        "group": "Chess Club ",
         "time": "1 day ago",
         "content": " "
     },
     {
         "picture": "assets/images/avatar-rizky-hasanuddin.webp",
-        "name": "Rizky Hasanuddin",
-        "message": "sent you a private message",
-        "post": "My first tournament today!",
+        "name": "Rizky Hasanuddin ",
+        "message": "sent you a private message ",
+        "post": " ",
+        "group": " ",
         "time": "5 days ago",
         "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
     },
     {
         "picture": "assets/images/avatar-kimberly-smith.webp",
-        "name": "Kimberly Smith",
-        "message": "commented on your picture",
-        "post": "My first tournament today!",
+        "name": "Kimberly Smith ",
+        "message": "commented on your picture ",
+        "post": " ",
+        "group": " ",
         "time": "1 week ago",
         "content": " "
     },
     {
         "picture": "assets/images/avatar-nathan-peterson.webp",
-        "name": "Nathan Peterson",
-        "message": "reacted to your recent post",
-        "post": "5 end-game strategies to increase your win rate",
+        "name": "Nathan Peterson ",
+        "message": "reacted to your recent post ",
+        "post": "5 end-game strategies to increase your win rate ",
+        "group": " ",
         "time": "2 weeks ago",
         "content": " "
     },
     {
         "picture": "assets/images/avatar-anna-kim.webp",
-        "name": "Anna Kim",
-        "message": "left the group",
-        "post": "Chess Club",
+        "name": "Anna Kim ",
+        "message": "left the group ",
+        "post": " ",
+        "group": "Chess Club ",
         "time": "2 weeks ago",
         "content": " "
     }
