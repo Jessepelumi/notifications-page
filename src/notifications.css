@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 .notification-box {
-    @apply flex
+    @apply flex gap-5
+}
+
+.notify-element {
+    @apply w-4/5
 }
 
 .picture-element {
