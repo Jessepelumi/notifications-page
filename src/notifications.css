@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.notification-box {
+    @apply flex
+}
+
+.picture-element {
+    @apply w-1/4
+}
