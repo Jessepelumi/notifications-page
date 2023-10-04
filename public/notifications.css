@@ -621,6 +621,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.font-plusjakarta {
+  font-family: PlusJakarta;
+}
+
 .text-custom {
   font-size: 16px;
 }
@@ -650,16 +654,18 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+@font-face {
+  font-family: "PlusJakarta";
+
+  src: url("assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
 .notification-box {
   display: flex;
+  cursor: pointer;
   gap: 0.25rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
-}
-
-.notification-box:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(211 68% 94% / var(--tw-bg-opacity));
 }
 
 .notify-element {
@@ -672,6 +678,11 @@ video {
   color: hsl(224 21% 14% / var(--tw-text-opacity));
 }
 
+.name:hover {
+  --tw-text-opacity: 1;
+  color: hsl(219 85% 26% / var(--tw-text-opacity));
+}
+
 .message, .time {
   --tw-text-opacity: 1;
   color: hsl(219 12% 42% / var(--tw-text-opacity));
@@ -681,6 +692,11 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: hsl(219 12% 42% / var(--tw-text-opacity));
+}
+
+.post:hover {
+  --tw-text-opacity: 1;
+  color: hsl(219 85% 26% / var(--tw-text-opacity));
 }
 
 .group {
@@ -698,6 +714,12 @@ video {
   color: hsl(219 12% 42% / var(--tw-text-opacity));
 }
 
+.content:hover {
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: hsl(211 68% 94% / var(--tw-bg-opacity));
+}
+
 .picture-element {
   display: flex;
   height: 100%;
@@ -705,7 +727,7 @@ video {
   justify-content: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .picture-element {
     width: 8.333333%;
   }

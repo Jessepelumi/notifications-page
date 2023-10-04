@@ -20,6 +20,9 @@ module.exports = {
       },
       fontSize: {
         "custom": "16px"
+      },
+      fontFamily: {
+        "plusjakarta": ["PlusJakarta"]
       }
     },
   },
