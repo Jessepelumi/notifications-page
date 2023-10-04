@@ -5,6 +5,7 @@
         "message": "reacted to your recent post ",
         "post": "My first tournament today! ",
         "group": " ",
+        "image": "",
         "time": "1m ago",
         "content": ""
     },
@@ -14,6 +15,7 @@
         "message": "followed you ",
         "post": " ",
         "group": " ",
+        "image": "",
         "time": "5m ago",
         "content": ""
     },
@@ -23,6 +25,7 @@
         "message": "has joined your group ",
         "post": " ",
         "group": "Chess Club ",
+        "image": "",
         "time": "1 day ago",
         "content": ""
     },
@@ -32,6 +35,7 @@
         "message": "sent you a private message ",
         "post": " ",
         "group": " ",
+        "image": "",
         "time": "5 days ago",
         "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
     },
@@ -41,6 +45,7 @@
         "message": "commented on your picture ",
         "post": "",
         "group": " ",
+        "image": "<img src='assets/images/image-chess.webp'>",
         "time": "1 week ago",
         "content": ""
     },
@@ -50,6 +55,7 @@
         "message": "reacted to your recent post ",
         "post": "5 end-game strategies to increase your win rate ",
         "group": " ",
+        "image": "",
         "time": "2 weeks ago",
         "content": ""
     },
@@ -59,6 +65,7 @@
         "message": "left the group ",
         "post": " ",
         "group": "Chess Club ",
+        "image": "",
         "time": "2 weeks ago",
         "content": ""
     }

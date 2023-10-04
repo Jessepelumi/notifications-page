@@ -15,6 +15,10 @@
     @apply w-5/6
 }
 
+.notify {
+    @apply flex justify-between
+}
+
 .name {
     @apply font-bold text-neutral-v-dark-blue hover:text-primary-blue
 }
@@ -29,6 +33,10 @@
 
 .group {
     @apply text-primary-blue font-semibold
+}
+
+.image {
+    @apply w-1/6 md:w-1/12
 }
 
 .content {

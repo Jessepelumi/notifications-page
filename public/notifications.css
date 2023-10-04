@@ -672,6 +672,11 @@ video {
   width: 83.333333%;
 }
 
+.notify {
+  display: flex;
+  justify-content: space-between;
+}
+
 .name {
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -703,6 +708,16 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: hsl(219 85% 26% / var(--tw-text-opacity));
+}
+
+.image {
+  width: 16.666667%;
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: 8.333333%;
+  }
 }
 
 .content {
