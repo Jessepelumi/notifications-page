@@ -715,7 +715,8 @@ video {
 }
 
 .content:hover {
-  border-style: none;
+  --tw-border-opacity: 1;
+  border-color: hsl(211 68% 94% / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: hsl(211 68% 94% / var(--tw-bg-opacity));
 }

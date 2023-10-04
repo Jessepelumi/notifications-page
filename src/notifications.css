@@ -32,7 +32,7 @@
 }
 
 .content {
-    @apply text-neutral-d-grayish-blue rounded-md border mt-1 p-3 hover:bg-neutral-l-grayish-blue1 hover:border-none
+    @apply text-neutral-d-grayish-blue rounded-md border mt-1 p-3 hover:bg-neutral-l-grayish-blue1 hover:border-neutral-l-grayish-blue1
 }
 
 .picture-element {
