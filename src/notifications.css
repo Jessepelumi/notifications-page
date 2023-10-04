@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .notification-box {
-    @apply flex gap-1 bg-neutral-l-grayish-blue1 rounded-lg p-2
+    @apply flex gap-1 rounded-lg p-2 hover:bg-neutral-l-grayish-blue1
 }
 
 .notify-element {
@@ -31,7 +31,7 @@
 }
 
 .picture-element {
-    @apply w-1/6 flex justify-center h-full
+    @apply w-1/6 flex justify-center h-full lg:w-1/12
 }
 
 .picture {

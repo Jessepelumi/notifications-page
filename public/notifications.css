@@ -654,9 +654,12 @@ video {
   display: flex;
   gap: 0.25rem;
   border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.notification-box:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(211 68% 94% / var(--tw-bg-opacity));
-  padding: 0.5rem;
 }
 
 .notify-element {
@@ -702,6 +705,19 @@ video {
   justify-content: center;
 }
 
+@media (min-width: 1024px) {
+  .picture-element {
+    width: 8.333333%;
+  }
+}
+
 .picture {
   width: 66.666667%;
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
 }
