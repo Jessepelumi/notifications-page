@@ -8,7 +8,32 @@ fetch("assets/notifications.json")
     })
     .then(data => {
 
+        const keyToCount = "unread";
+        const valueToCount = true;
+
+        let count = 0;
+
+        for (const obj of data) {
+            if (obj[keyToCount] === valueToCount) {
+                count++;
+            }
+        };
+        console.log(count);
+
+        const keyToExtract = "unread";
+        const valuesArray = [];
+
+        for (const item of data) {
+            if (item.hasOwnProperty(keyToExtract)) {
+                valuesArray.push(item[keyToExtract]);
+            }
+        };
+        console.log(valuesArray);
+
         const notifications = data.map(notification => {
+            const unreadValue = notification.unread;
+            console.log(unreadValue);
+
             const notificationBox = document.createElement("div");
             notificationBox.classList.add("notification-box");
 
@@ -57,17 +82,9 @@ fetch("assets/notifications.json")
             if(content.innerText === "") {
                 content.classList.remove("content");
             };
+
         });
 
-        function getUnreadNum() {
-            let count = 0;
-
-            return count;
-        }
-        getUnreadNum();
-
-        const notificationCount = document.getElementById("notification-count");
-        notificationCount.innerText = count;
 
     })
     .catch(error => console.log("Error loading JSON: ", error.message));

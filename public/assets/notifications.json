@@ -8,7 +8,7 @@
         "image": "",
         "time": "1m ago",
         "content": "",
-        "read": true
+        "unread": true
     },
     {
         "picture": "assets/images/avatar-angela-gray.webp",
@@ -19,7 +19,7 @@
         "image": "",
         "time": "5m ago",
         "content": "",
-        "read": true
+        "unread": true
     },
     {
         "picture": "assets/images/avatar-jacob-thompson.webp",
@@ -30,7 +30,7 @@
         "image": "",
         "time": "1 day ago",
         "content": "",
-        "read": true
+        "unread": true
     },
     {
         "picture": "assets/images/avatar-rizky-hasanuddin.webp",
@@ -41,7 +41,7 @@
         "image": "",
         "time": "5 days ago",
         "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
-        "read": false
+        "unread": false
     },
     {
         "picture": "assets/images/avatar-kimberly-smith.webp",
@@ -52,7 +52,7 @@
         "image": "<img src='assets/images/image-chess.webp'>",
         "time": "1 week ago",
         "content": "",
-        "read": false
+        "unread": false
     },
     {
         "picture": "assets/images/avatar-nathan-peterson.webp",
@@ -63,7 +63,7 @@
         "image": "",
         "time": "2 weeks ago",
         "content": "",
-        "read": false
+        "unread": false
     },
     {
         "picture": "assets/images/avatar-anna-kim.webp",
@@ -74,6 +74,6 @@
         "image": "",
         "time": "2 weeks ago",
         "content": "",
-        "read": false
+        "unread": false
     }
 ]
