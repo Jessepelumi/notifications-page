@@ -8,7 +8,7 @@
 }
 
 .notification-box {
-    @apply flex gap-1 rounded-lg p-2 cursor-pointer
+    @apply flex gap-1 rounded-lg p-1 cursor-pointer
 }
 
 .notify-element {

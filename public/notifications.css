@@ -580,6 +580,14 @@ video {
   display: flex;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -590,6 +598,10 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .rounded-md {
@@ -665,7 +677,7 @@ video {
   cursor: pointer;
   gap: 0.25rem;
   border-radius: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .notify-element {
@@ -754,8 +766,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:px-48 {
-    padding-left: 12rem;
-    padding-right: 12rem;
+  .lg\:px-72 {
+    padding-left: 18rem;
+    padding-right: 18rem;
   }
 }

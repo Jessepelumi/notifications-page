@@ -57,7 +57,17 @@ fetch("assets/notifications.json")
             if(content.innerText === "") {
                 content.classList.remove("content");
             };
-        })
+        });
+
+        function getUnreadNum() {
+            let count = 0;
+
+            return count;
+        }
+        getUnreadNum();
+
+        const notificationCount = document.getElementById("notification-count");
+        notificationCount.innerText = count;
 
     })
     .catch(error => console.log("Error loading JSON: ", error.message));
