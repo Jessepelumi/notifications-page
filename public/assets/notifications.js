@@ -1,5 +1,5 @@
 
-fetch("assets/notifications.json")
+fetch("assets/notificationsDb.json")
     .then(response => {
         if (!response.ok) {
             throw new Error("Couldn't fetch data");
@@ -11,7 +11,7 @@ fetch("assets/notifications.json")
         
 
         const notifications = data.map(notification => {
-            
+
             const keyToCount = "unread";
             const valueToCount = true;
 

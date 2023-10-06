@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "picture": "assets/images/avatar-mark-webber.webp",
         "name": "Mark Webber ",
         "message": "reacted to your recent post ",
@@ -11,6 +12,7 @@
         "unread": true
     },
     {
+        "id": 2,
         "picture": "assets/images/avatar-angela-gray.webp",
         "name": "Angela Gray ",
         "message": "followed you ",
@@ -22,6 +24,7 @@
         "unread": true
     },
     {
+        "id": 3,
         "picture": "assets/images/avatar-jacob-thompson.webp",
         "name": "Jacob Thompson ",
         "message": "has joined your group ",
@@ -33,6 +36,7 @@
         "unread": true
     },
     {
+        "id": 4,
         "picture": "assets/images/avatar-rizky-hasanuddin.webp",
         "name": "Rizky Hasanuddin ",
         "message": "sent you a private message ",
@@ -44,6 +48,7 @@
         "unread": false
     },
     {
+        "id": 5,
         "picture": "assets/images/avatar-kimberly-smith.webp",
         "name": "Kimberly Smith ",
         "message": "commented on your picture ",
@@ -54,7 +59,8 @@
         "content": "",
         "unread": false
     },
-    {
+    {    
+        "id": 6,
         "picture": "assets/images/avatar-nathan-peterson.webp",
         "name": "Nathan Peterson ",
         "message": "reacted to your recent post ",
@@ -66,6 +72,7 @@
         "unread": false
     },
     {
+        "id": 7,
         "picture": "assets/images/avatar-anna-kim.webp",
         "name": "Anna Kim ",
         "message": "left the group ",
