@@ -8,37 +8,38 @@ fetch("assets/notifications.json")
     })
     .then(data => {
 
-        const keyToCount = "unread";
-        const valueToCount = true;
-
-        let count = 0;
-
-        for (const obj of data) {
-            if (obj[keyToCount] === valueToCount) {
-                count++;
-            }
-        };
-        console.log(count);
-
-        const keyToExtract = "unread";
-        const valuesArray = [];
-
-        for (const item of data) {
-            if (item.hasOwnProperty(keyToExtract)) {
-                valuesArray.push(item[keyToExtract]);
-            }
-        };
-        console.log(valuesArray);
-
-        const filterCondition = (value) => value === true;
-        const trueValuesArray = valuesArray.filter(filterCondition);
-        console.log(trueValuesArray.length);
+        
 
         const notifications = data.map(notification => {
+            
+            const keyToCount = "unread";
+            const valueToCount = true;
+
+            let count = 0;
+
+            for (const obj of data) {
+                if (obj[keyToCount] === valueToCount) {
+                    count++;
+                }
+            };
+            console.log(count);
+
+            const keyToExtract = "unread";
+            const valuesArray = [];
+
+            for (const item of data) {
+                if (item.hasOwnProperty(keyToExtract)) {
+                    valuesArray.push(item[keyToExtract]);
+                }
+            };
+            console.log(valuesArray);
+
+            const filterCondition = (value) => value === true;
+            const trueValuesArray = valuesArray.filter(filterCondition);
+            console.log(trueValuesArray.length);
+
             const unreadValue = notification.unread;
-            // const unread = (unreadValue === true);
-            // console.log(unread);
-            // console.log(unreadValue);
+            console.log(unreadValue);
 
             
 
@@ -91,7 +92,16 @@ fetch("assets/notifications.json")
                 content.classList.remove("content");
             };
 
+            const notificationCount = document.getElementById("notification-count");
+            notificationCount.innerText = count;
+
+            const markAsRead = document.getElementById("mark-as-read");
+            markAsRead.addEventListener("click", () => {
+
+            });
+
         });
+
 
 
     })
