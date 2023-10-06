@@ -30,9 +30,17 @@ fetch("assets/notifications.json")
         };
         console.log(valuesArray);
 
+        const filterCondition = (value) => value === true;
+        const trueValuesArray = valuesArray.filter(filterCondition);
+        console.log(trueValuesArray.length);
+
         const notifications = data.map(notification => {
             const unreadValue = notification.unread;
-            console.log(unreadValue);
+            // const unread = (unreadValue === true);
+            // console.log(unread);
+            // console.log(unreadValue);
+
+            
 
             const notificationBox = document.createElement("div");
             notificationBox.classList.add("notification-box");
