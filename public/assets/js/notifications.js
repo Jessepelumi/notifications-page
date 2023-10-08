@@ -47,6 +47,7 @@ const renderPosts = async () => {
                     </div>
                     <div class="content">
                         ${notification.content}
+                        
                     </div>
                 </div>
             
@@ -59,8 +60,8 @@ const renderPosts = async () => {
 
     container.innerHTML = template;
 
-    const contentDiv = container.querySelector(".content");
-    console.log(contentDiv.innerHTML);
+    const contentDiv = container.getElementsByClassName("content");
+    console.log(contentDiv);
     if(contentDiv.innerText === "") {
         contentDiv.classList.remove("content");
     };
