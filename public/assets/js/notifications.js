@@ -45,7 +45,7 @@ const renderPosts = async () => {
                     <div class="time">
                         ${notification.time}
                     </div>
-                    <div class="content">
+                    <div class="content-container ">
                         ${notification.content}
                         
                     </div>
@@ -60,12 +60,24 @@ const renderPosts = async () => {
 
     container.innerHTML = template;
 
-    const contentDiv = container.getElementsByClassName("content");
-    console.log(contentDiv);
-    if(contentDiv.innerText === "") {
-        contentDiv.classList.remove("content");
-    };
+    // const contentDiv = container.getElementsByClassName("content");
+    // console.log(contentDiv);
+    // console.log(contentDiv.textContent);
+
+    
 
 };
+
+console.log(container);
+const contentContainer = container.querySelectorAll(".content-container");
+console.log(contentContainer);
+    
+for (const child of container.children) {
+    if (child.classList.contains("content-container")) {
+        if (child.innerText !== "") {
+            child.classList.add("content");
+        }
+    }
+}
 
 window.addEventListener("DOMContentLoaded", () => renderPosts());
