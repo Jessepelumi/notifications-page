@@ -45,7 +45,7 @@ const renderPosts = async () => {
                     <div class="time">
                         ${notification.time}
                     </div>
-                    <div class="content-container ">
+                    <div class="content-container content">
                         ${notification.content}
                         
                     </div>
