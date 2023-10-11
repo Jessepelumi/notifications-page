@@ -10,56 +10,6 @@ const renderPosts = async () => {
     const notifications = await response.json();
     console.log(notifications);
 
-    // let template = "";
-    // notifications.forEach(notification => {
-    //     template += `
-    //         <div class="notification-box">
-            
-    //             <div class="picture-element">
-    //                 <img src="${notification.picture}" alt="${notification.name}" class="picture" >
-    //             </div>
-
-    //             <div class="notify-element">
-    //                 <div class="notify">
-    //                     <div>
-    //                         <div>
-    //                             <span class="name">
-    //                                 ${notification.name}
-    //                             </span>
-    //                             <span class="message">
-    //                                 ${notification.message}
-    //                             </span>
-    //                             <span class="post">
-    //                                 ${notification.post}
-    //                             </span>
-    //                             <span class="group">
-    //                                 ${notification.group}
-    //                             </span>
-    //                         </div>
-    //                     </div>
-    //                     <span class="image">
-    //                         ${notification.image}
-    //                     </span>
-                        
-    //                 </div>
-    //                 <div class="time">
-    //                     ${notification.time}
-    //                 </div>
-    //                 <div class="content-container content">
-    //                     ${notification.content}
-                        
-    //                 </div>
-    //             </div>
-            
-    //         </div>
-
-    //     `
-
-
-    // });
-
-    // container.innerHTML = template;
-
     notifications.forEach(notification => {
 
         const notificationBox = document.createElement("div");
