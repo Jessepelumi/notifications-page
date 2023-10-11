@@ -61,6 +61,39 @@ const renderPosts = async () => {
         if(content.innerText === "") {
             content.classList.remove("content");
         };
+
+
+        const keyToCount = "unread";
+        const valueToCount = true;
+
+        let count = 0;
+
+        for (const obj of notifications) {
+            if (obj[keyToCount] === valueToCount) {
+                count++;
+            }
+        };
+        console.log(count);
+
+        const keyToExtract = "unread";
+        const valuesArray = [];
+
+        for (const item of notifications) {
+            if (item.hasOwnProperty(keyToExtract)) {
+                valuesArray.push(item[keyToExtract]);
+            }
+        };
+        console.log(valuesArray);
+
+        const filterCondition = (value) => value === true;
+        const trueValuesArray = valuesArray.filter(filterCondition);
+        console.log(trueValuesArray.length);
+
+        const unreadValue = notification.unread;
+        console.log(unreadValue);
+
+        const notificationCount = document.getElementById("notification-count");
+        notificationCount.innerText = count;
     });
 
     
