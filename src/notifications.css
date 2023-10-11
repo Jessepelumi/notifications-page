@@ -35,6 +35,10 @@
     @apply text-primary-blue font-semibold
 }
 
+.indicator {
+    @apply bg-primary-red p-1 h-1 rounded-full
+}
+
 .image {
     @apply w-1/6 md:w-1/12
 }

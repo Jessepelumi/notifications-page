@@ -31,6 +31,7 @@ const renderPosts = async () => {
         const message = document.createElement("span");
         const post = document.createElement("span");
         const group = document.createElement("span");
+        const indicator = document.createElement("span");
         const image = document.createElement("span");
         const content = document.createElement("div");
         name.innerText = notification.name;
@@ -41,6 +42,7 @@ const renderPosts = async () => {
         post.classList.add("post");
         group.innerText = notification.group;
         group.classList.add("group");
+        indicator.classList.add("indicator");
         time.innerText = notification.time;
         time.classList.add("time");
         content.innerText = notification.content;
@@ -49,7 +51,7 @@ const renderPosts = async () => {
         image.classList.add("image");
         notifyEl.classList.add("notify-element");
         notify.classList.add("notify");
-        notifyBox.append(name, message, post, group)
+        notifyBox.append(name, message, post, group, indicator)
         notify.append(notifyBox, image);
         notifyEl.append(notify, time, content);
 
