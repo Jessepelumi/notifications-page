@@ -60,9 +60,9 @@ const renderPosts = async () => {
 
     container.innerHTML = template;
 
-    // const contentDiv = container.getElementsByClassName("content");
-    // console.log(contentDiv);
-    // console.log(contentDiv.textContent);
+    const contentDiv = container.getElementsByClassName("content");
+    console.log(contentDiv);
+    console.log(contentDiv.textContent);
 
     
 
