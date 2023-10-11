@@ -10,74 +10,112 @@ const renderPosts = async () => {
     const notifications = await response.json();
     console.log(notifications);
 
-    let template = "";
+    // let template = "";
+    // notifications.forEach(notification => {
+    //     template += `
+    //         <div class="notification-box">
+            
+    //             <div class="picture-element">
+    //                 <img src="${notification.picture}" alt="${notification.name}" class="picture" >
+    //             </div>
+
+    //             <div class="notify-element">
+    //                 <div class="notify">
+    //                     <div>
+    //                         <div>
+    //                             <span class="name">
+    //                                 ${notification.name}
+    //                             </span>
+    //                             <span class="message">
+    //                                 ${notification.message}
+    //                             </span>
+    //                             <span class="post">
+    //                                 ${notification.post}
+    //                             </span>
+    //                             <span class="group">
+    //                                 ${notification.group}
+    //                             </span>
+    //                         </div>
+    //                     </div>
+    //                     <span class="image">
+    //                         ${notification.image}
+    //                     </span>
+                        
+    //                 </div>
+    //                 <div class="time">
+    //                     ${notification.time}
+    //                 </div>
+    //                 <div class="content-container content">
+    //                     ${notification.content}
+                        
+    //                 </div>
+    //             </div>
+            
+    //         </div>
+
+    //     `
+
+
+    // });
+
+    // container.innerHTML = template;
+
     notifications.forEach(notification => {
-        template += `
-            <div class="notification-box">
-            
-                <div class="picture-element">
-                    <img src="${notification.picture}" alt="${notification.name}" class="picture" >
-                </div>
 
-                <div class="notify-element">
-                    <div class="notify">
-                        <div>
-                            <div>
-                                <span class="name">
-                                    ${notification.name}
-                                </span>
-                                <span class="message">
-                                    ${notification.message}
-                                </span>
-                                <span class="post">
-                                    ${notification.post}
-                                </span>
-                                <span class="group">
-                                    ${notification.group}
-                                </span>
-                            </div>
-                        </div>
-                        <span class="image">
-                            ${notification.image}
-                        </span>
-                        
-                    </div>
-                    <div class="time">
-                        ${notification.time}
-                    </div>
-                    <div class="content-container content">
-                        ${notification.content}
-                        
-                    </div>
-                </div>
-            
-            </div>
+        const notificationBox = document.createElement("div");
+        notificationBox.classList.add("notification-box");
 
-        `
+        const pictureEl = document.createElement("div");
+        const picture = document.createElement("img");
+        picture.src = notification.picture;
+        picture.alt = notification.name;
+        pictureEl.classList.add("picture-element");
+        picture.classList.add("picture");
+        pictureEl.append(picture);
+
+        const notifyEl = document.createElement("div");
+        const notify = document.createElement("div");
+        const notifyBox = document.createElement("div");
+        const time = document.createElement("div");
+        const name = document.createElement("span");
+        const message = document.createElement("span");
+        const post = document.createElement("span");
+        const group = document.createElement("span");
+        const image = document.createElement("span");
+        const content = document.createElement("div");
+        name.innerText = notification.name;
+        name.classList.add("name");
+        message.innerText = notification.message;
+        message.classList.add("message");
+        post.innerText = notification.post;
+        post.classList.add("post");
+        group.innerText = notification.group;
+        group.classList.add("group");
+        time.innerText = notification.time;
+        time.classList.add("time");
+        content.innerText = notification.content;
+        content.classList.add("content");
+        image.innerHTML = notification.image;
+        image.classList.add("image");
+        notifyEl.classList.add("notify-element");
+        notify.classList.add("notify");
+        notifyBox.append(name, message, post, group)
+        notify.append(notifyBox, image);
+        notifyEl.append(notify, time, content);
+
+        notificationBox.append(pictureEl, notifyEl);
+
+        container.append(notificationBox);
 
 
+        if(content.innerText === "") {
+            content.classList.remove("content");
+        };
     });
-
-    container.innerHTML = template;
-
-    const contentDiv = container.getElementsByClassName("content");
-    console.log(contentDiv);
-    console.log(contentDiv.textContent);
 
     
 
 };
 
-console.log(container);
-const contentContainer = container.querySelectorAll(".content-container");
-console.log(contentContainer);
-    
-for (const child of container.children) {
-    if (child.classList.contains("content-container")) {
-        if (child.innerText !== "") {
-            child.classList.add("content");
-        }
-    }
-}
 
 window.addEventListener("DOMContentLoaded", () => renderPosts());
