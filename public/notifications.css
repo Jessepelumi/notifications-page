@@ -741,6 +741,8 @@ video {
 }
 
 .image {
+  height: -moz-fit-content;
+  height: fit-content;
   width: 16.666667%;
 }
 

@@ -44,7 +44,7 @@
 }
 
 .image {
-    @apply w-1/6 md:w-1/12 hover:border-4 hover:border-neutral-l-grayish-blue1 hover:rounded-xl
+    @apply h-fit w-1/6 md:w-1/12 hover:border-4 hover:border-neutral-l-grayish-blue1 hover:rounded-xl
 }
 
 .content {
