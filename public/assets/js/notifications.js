@@ -42,6 +42,7 @@ const renderPosts = async () => {
         post.classList.add("post");
         group.innerText = notification.group;
         group.classList.add("group");
+        indicator.innerText = "."
         indicator.classList.add("indicator");
         time.innerText = notification.time;
         time.classList.add("time");
@@ -63,7 +64,6 @@ const renderPosts = async () => {
         if(content.innerText === "") {
             content.classList.remove("content");
         };
-
 
         const keyToCount = "unread";
         const valueToCount = true;
@@ -96,6 +96,10 @@ const renderPosts = async () => {
 
         const notificationCount = document.getElementById("notification-count");
         notificationCount.innerText = count;
+
+        if(unreadValue === false) {
+            indicator.innerText = "";
+        };
     });
 
     

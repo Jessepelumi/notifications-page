@@ -718,13 +718,9 @@ video {
   color: hsl(219 85% 26% / var(--tw-text-opacity));
 }
 
-.indicator {
-  height: 0.25rem;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: hsl(1 90% 64% / var(--tw-bg-opacity));
-  padding: 0.25rem;
-}
+/* .indicator {
+    @apply 
+} */
 
 .image {
   width: 16.666667%;

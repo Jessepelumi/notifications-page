@@ -36,7 +36,7 @@
 }
 
 .indicator {
-    @apply bg-primary-red p-1 h-1 rounded-full
+    @apply 
 }
 
 .image {
