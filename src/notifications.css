@@ -36,7 +36,7 @@
 }
 
 .indicator {
-    @apply font-bold
+    @apply bg-primary-red inline-block rounded-full p-1
 }
 
 .image {

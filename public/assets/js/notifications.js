@@ -31,7 +31,7 @@ const renderPosts = async () => {
         const message = document.createElement("span");
         const post = document.createElement("span");
         const group = document.createElement("span");
-        const indicator = document.createElement("span");
+        const indicator = document.createElement("div");
         const image = document.createElement("span");
         const content = document.createElement("div");
         name.innerText = notification.name;
@@ -42,7 +42,6 @@ const renderPosts = async () => {
         post.classList.add("post");
         group.innerText = notification.group;
         group.classList.add("group");
-        indicator.innerText = notification.indicator;
         indicator.classList.add("indicator");
         time.innerText = notification.time;
         time.classList.add("time");
