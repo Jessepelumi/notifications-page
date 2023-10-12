@@ -718,9 +718,9 @@ video {
   color: hsl(219 85% 26% / var(--tw-text-opacity));
 }
 
-/* .indicator {
-    @apply 
-} */
+.indicator {
+  font-weight: 700;
+}
 
 .image {
   width: 16.666667%;

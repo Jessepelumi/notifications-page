@@ -42,7 +42,7 @@ const renderPosts = async () => {
         post.classList.add("post");
         group.innerText = notification.group;
         group.classList.add("group");
-        indicator.innerText = "."
+        indicator.innerText = notification.indicator;
         indicator.classList.add("indicator");
         time.innerText = notification.time;
         time.classList.add("time");
