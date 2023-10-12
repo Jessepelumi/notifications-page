@@ -100,6 +100,10 @@ const renderPosts = async () => {
             indicator.classList.remove("indicator");
             notificationBox.classList.remove("notification-box-background")
         };
+
+        if(image.innerHTML === "") {
+            image.classList.remove("image");
+        };
     });
 
     

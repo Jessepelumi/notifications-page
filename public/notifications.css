@@ -585,6 +585,10 @@ video {
   display: flex;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -740,6 +744,13 @@ video {
   width: 16.666667%;
 }
 
+.image:hover {
+  border-radius: 0.75rem;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: hsl(211 68% 94% / var(--tw-border-opacity));
+}
+
 @media (min-width: 768px) {
   .image {
     width: 8.333333%;
@@ -777,6 +788,11 @@ video {
 
 .picture {
   width: 66.666667%;
+}
+
+.hover\:text-neutral-v-dark-blue:hover {
+  --tw-text-opacity: 1;
+  color: hsl(224 21% 14% / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
