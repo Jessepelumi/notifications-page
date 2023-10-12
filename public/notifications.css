@@ -676,6 +676,11 @@ video {
   padding: 0.25rem;
 }
 
+.notification-box-background {
+  --tw-bg-opacity: 1;
+  background-color: hsl(211 68% 94% / var(--tw-bg-opacity));
+}
+
 .notify-element {
   width: 83.333333%;
 }

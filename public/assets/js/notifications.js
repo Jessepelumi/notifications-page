@@ -13,7 +13,7 @@ const renderPosts = async () => {
     notifications.forEach(notification => {
 
         const notificationBox = document.createElement("div");
-        notificationBox.classList.add("notification-box");
+        notificationBox.classList.add("notification-box", "notification-box-background");
 
         const pictureEl = document.createElement("div");
         const picture = document.createElement("img");
@@ -97,7 +97,8 @@ const renderPosts = async () => {
         notificationCount.innerText = count;
 
         if(unreadValue === false) {
-            indicator.innerText = "";
+            indicator.classList.remove("indicator");
+            notificationBox.classList.remove("notification-box-background")
         };
     });
 

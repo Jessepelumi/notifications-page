@@ -11,6 +11,10 @@
     @apply flex gap-1 rounded-lg p-1 cursor-pointer
 }
 
+.notification-box-background {
+    @apply bg-neutral-l-grayish-blue1
+}
+
 .notify-element {
     @apply w-5/6
 }
