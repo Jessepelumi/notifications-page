@@ -14,7 +14,6 @@ const renderPosts = async () => {
 
         const notificationBox = document.createElement("div");
         notificationBox.classList.add("notification-box", "notification-box-background");
-        notificationBox.setAttribute("id", "notification-main");
 
         const pictureEl = document.createElement("div");
         const picture = document.createElement("img");
@@ -106,8 +105,7 @@ const renderPosts = async () => {
             image.classList.remove("image");
         };
 
-        notificationBox.addEventListener("click", (e) =>{
-            e.preventDefault();
+        notificationBox.addEventListener("click", () =>{
 
             const notificationId = notification.id;
             console.log(notificationId);
