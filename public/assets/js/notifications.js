@@ -14,6 +14,7 @@ const renderPosts = async () => {
 
         const notificationBox = document.createElement("div");
         notificationBox.classList.add("notification-box", "notification-box-background");
+        notificationBox.setAttribute("id", "notification-main");
 
         const pictureEl = document.createElement("div");
         const picture = document.createElement("img");
@@ -104,6 +105,40 @@ const renderPosts = async () => {
         if(image.innerHTML === "") {
             image.classList.remove("image");
         };
+
+        notificationBox.addEventListener("click", (e) =>{
+            e.preventDefault();
+
+            const notificationId = notificationBox.id;
+            console.log(notificationId);
+
+            const updateUri = `${uri}/${notificationId}`;
+
+            const updatedData = {
+                unread: false,
+            };
+
+            fetch (updateUri, {
+                method: "PATCH",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(updatedData)
+            })
+                .then((response) => {
+                    if(!response.ok) {
+                        throw new Error("Network response was not okay");
+                    }
+                    return response.json();
+                })
+                .then((responseJson) => {
+                    console.log("Data updated successfully:", responseJson);
+                })
+                .catch((error) => {
+                    console.error("An error occured:", error);
+                });
+
+        });
     });
 
     
