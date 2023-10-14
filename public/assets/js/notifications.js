@@ -109,7 +109,7 @@ const renderPosts = async () => {
         notificationBox.addEventListener("click", (e) =>{
             e.preventDefault();
 
-            const notificationId = notificationBox.id;
+            const notificationId = notification.id;
             console.log(notificationId);
 
             const updateUri = `${uri}/${notificationId}`;
