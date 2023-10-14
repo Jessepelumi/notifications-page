@@ -137,6 +137,35 @@ const renderPosts = async () => {
                 });
 
         });
+
+        markAsRead.addEventListener("click", () => {
+            
+            const notificationIds = notifications.map(notification => notification.id);
+        
+            const updateRequests = notificationIds.map(notificationId => {
+                const updateUri = `${uri}/${notificationId}`;
+                return fetch(updateUri, {
+                    method: "PATCH",
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ unread: false }),
+                });
+            });
+        
+            Promise.all(updateRequests)
+                .then((responses) => {
+                    if (responses.every(response => response.ok)) {
+                        console.log("All data updated successfully.");
+                    } else {
+                        console.error("Some updates failed.");
+                    }
+                })
+                .catch((error) => {
+                    console.error("An error occurred:", error);
+                });
+        });
+        
     });
 
     
@@ -144,4 +173,8 @@ const renderPosts = async () => {
 };
 
 
-window.addEventListener("DOMContentLoaded", () => renderPosts());
+window.addEventListener("DOMContentLoaded", (e) => {
+
+    renderPosts();
+    e.preventDefault();
+});
