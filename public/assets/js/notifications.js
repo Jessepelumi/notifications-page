@@ -3,6 +3,14 @@ const container = document.getElementById("container");
 const notificationCount = document.getElementById("notification-count");
 const markAsRead = document.getElementById("mark-as-read");
 
+const setDefault = (notifications, specificIds) => {
+    for (const notification of notifications) {
+        if (specificIds.includes(notification.id)) {
+            notification.unread = true;
+        }
+    }
+};
+
 const renderPosts = async () => {
     let uri = "http://localhost:3000/notifications";
 
@@ -176,5 +184,9 @@ const renderPosts = async () => {
 window.addEventListener("DOMContentLoaded", (e) => {
 
     renderPosts();
+
+    // const specificIds = [1, 2, 3];
+    // setDefault(notifications, specificIds);
+    
     e.preventDefault();
 });
