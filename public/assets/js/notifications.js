@@ -3,51 +3,6 @@ const container = document.getElementById("container");
 const notificationCount = document.getElementById("notification-count");
 const markAsRead = document.getElementById("mark-as-read");
 
-const setDefault = (uri, specificIds) => {
-    
-    fetch(uri)
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Network response was not okay");
-            }
-            return response.json();
-        })
-        .then((notifications) => {
-            
-            for (const notification of notifications) {
-                if (specificIds.includes(notification.id)) {
-                    notification.unread = true;
-                }
-            }
-
-            const updateRequests = specificIds.map((id) => {
-                const updateUri = `${uri}/${id}`;
-                return fetch(updateUri, {
-                    method: "PATCH",
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ unread: true }),
-                });
-            });
-
-            Promise.all(updateRequests)
-                .then((responses) => {
-                    if (responses.every(response => response.ok)) {
-                        console.log("Specific data updated successfully.");
-                    } else {
-                        console.error("Some updates failed.");
-                    }
-                })
-                .catch((error) => {
-                    console.error("An error occurred:", error);
-                });
-        })
-        .catch((error) => {
-            console.error("An error occurred while fetching data:", error);
-        });
-};
-
 
 const renderPosts = async () => {
     let uri = "http://localhost:3000/notifications";
@@ -220,12 +175,6 @@ const renderPosts = async () => {
 
 
 window.addEventListener("DOMContentLoaded", (e) => {
-
-    // let uri = "http://localhost:3000/notifications";
-    // const specificIds = [1, 2, 3];
-    // setDefault(uri, specificIds);
-
     renderPosts();
-
     e.preventDefault();
 });
